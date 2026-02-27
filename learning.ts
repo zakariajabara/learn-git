@@ -1,1 +1,4 @@
-export interface Learning { name:string, }
+export interface Learning { 
+  name:string;
+  id: number;
+ }
