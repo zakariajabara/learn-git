@@ -1,9 +1,0 @@
-one
-two
-yellow
-white
-john
-mic
-line 1main 
-line 1newEntry
-value
