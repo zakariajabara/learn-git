@@ -1,0 +1,66 @@
+Git:
+	git clone https://…..git
+	git status
+	git add file // git add .
+	git commit -m „comment“
+	we can also
+	git commit // this open a text editor and you write the comment there
+
+   Branch:
+   
+	git checkout -b new-branch // create a new branch with name new-branch and switch inside it
+      or
+	git switch -c my_new_branch
+
+	git branch  // show all branches
+	git switch main // switch to the main branch
+	git push origin new-branch // push/create the new branch in the repository
+	//make a pull request to merge the new branch in the main branch
+	//confirm 
+	//merge
+	
+	//switch to the main . changes are not inside main we have to pull ist
+	git pull
+
+	git show // overview or history
+
+     - switch branch
+	git switch my-branch
+     or
+	got checkout my-branch
+
+	— delete branch local
+	git branch -d new-branch
+	git push —-delete origin new-branch // delete the branch on the repository
+     - rename a branch
+	git branch -m oldName newName
+
+—Log
+	 git log --oneline --decorate --reverse
+       besser:
+	git log --oneline --decorate --graph --parents
+	
+	git log //
+	show all informations: commit id, date, user  
+
+	remove files:
+	rm file.txt // remove local. 
+	// file still in Stange 
+	git ls-files // dies show file.txt
+	git add file.txt // file no still in stage
+	git commit -m „ …“ 
+	— alternativ we kann commit automatisch
+	git commit -am „message“
+	
+    // alternative 
+	git rm file.txt 
+
+	//restore files from stage Area. Remove the file from the stage area
+	git restore —staged file.txt // or . for all files
+	
+stash
+	—make change in a branch -> switch to another branch without add or commit
+	> git stash   // all changes removed
+	> git switch toanotherbranch
+	> git switch to changedbranch
+	> git pop //restore the changed . could also be called from others branch
